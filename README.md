@@ -1,5 +1,7 @@
 # seedrand.js
 
+[![Build Status](https://travis-ci.org/bfontaine/seedrand.js.png?branch=master)](https://travis-ci.org/bfontaine/seedrand.js)
+
 `seedrand.js` is a micro library which allows you to seed `Math.random()`. It’s
 mainly written for testing functions that require random numbers.
 
