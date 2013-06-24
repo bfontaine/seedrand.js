@@ -1,0 +1,25 @@
+{
+  "name": "seedrand",
+  "version": "0.1.0",
+  "description": "Use Math.seed() to get test your Math.random()-based functions.",
+  "main": "src/seedrand.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bfontaine/seedrand.js.git"
+  },
+  "keywords": [
+      "random"
+  ],
+  "author": "Baptiste Fontaine",
+  "license": "MIT",
+  "devDependencies": {
+      "mocha": "*",
+      "chai": "*"
+  }  
+}
