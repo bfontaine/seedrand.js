@@ -1,5 +1,7 @@
 sudo: false
-before_install: npm install -g mocha chai
+before_install:
+  - npm install -g npm
+  - npm install -g mocha chai
 language: node_js
 node_js:
   - 4.1
@@ -7,6 +9,7 @@ node_js:
   - 0.12
   - 0.11
   - 0.10
+  - 0.8
 script: mocha
 notifications:
   email: false
