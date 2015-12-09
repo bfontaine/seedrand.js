@@ -10,8 +10,7 @@
 
     'use strict';
 
-    var max  = Math.pow( 2, 32 ),
-        seed = false;
+    var seed = false;
 
     // keep a copy to the original .random()
     Math._random = Math.random;
@@ -29,8 +28,9 @@
 
         if ( seed === false ) { Math.seed(); }
 
-        seed += ( seed * seed ) | 5;
-        rand = ( seed >>> 32 ) / max;
+        seed = ( seed * 13229323 ) ^ 3962102927;
+    
+        rand = 0.5 + seed * 2.3283064365e-10;
 
         return arguments.length === 2
                     ? Math.floor(rand * ( upto - min ) + min)
